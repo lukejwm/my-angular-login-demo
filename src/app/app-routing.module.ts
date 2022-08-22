@@ -4,8 +4,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './components';
 import { AuthGuard } from './helpers';
 
-const accountModule = () => import('./account/account.module').then(x => x.AccountModule);
-const usersModule = () => import('./users/users.module').then(x => x.UsersModule);
+const accountModule = () => import('./modules/account/account.module').then(x => x.AccountModule);
+const usersModule = () => import('./modules/users/users.module').then(x => x.UsersModule);
 
 const routes: Routes = [
     { path: '', component: HomeComponent, canActivate: [AuthGuard] },
