@@ -1,11 +1,23 @@
-# Angular 14 Web Application (Login & Registration) Seed Project 
+# Admin Tools Frontend
 
-This seed project is a refactored version of the Angular 10 User Registration and Login project (see https://jasonwatmore.com/post/2020/07/18/angular-10-user-registration-and-login-example-tutorial for details). 
+This project uses Angular 14.1.3 and depends on NodeJS version 16.17.0 (current LTS version). 
 
-For our purposes, the original project has been updated from Angular 10 to 14, with the files being slightly restructured. We will need to ensure that the project is updated to the latest version of Angular (i.e. will need to be updated every 6 months) and must also be compatible with the latest LTS version of Node (currently v16.17.0) - NB: ONLY use the LTS version of Node.  
+Simply use "npm install" to download all of the core dependencies and "ng serve" to compile and run the application. Please ensure you are familiar with the Angular command line tooling and Angular best practices before attempting to work on this project. 
 
-TODO: Update the CSS so that we use our own Allied Offsets CSS template instead of the boring default Bootstrap template! 
+As a general rule, we should aim to always use the latest version Angular, which is typically updated every 6 months. Use "ng update" to achieve this. We should also limit ourselves to only using the current LTS version of Node as it is generaly more stable than newer versions.  
 
-It is expected that we will likely have many more web app projects in the future, so this is being kept in our "project template library" to help with productivity. Obviously, this cannot be used as a final product as it is only a seed project. 
+This project is the frontend part of Admin Tools application, which relies on its backend component to function. Please see the full documentation for the Admin Tools project for understanding how it works.
 
-This will go together with our "seed backend project" that is a very simple microservice using Scala, Akka HTTP and Gradle. 
+## About Admin Tools
+
+Admin Tools is a web-based in-house application intended to help simplify general management and administration tasks. The intended users are Management and members of the Technology and Data Analytics teams.  
+
+In its current state, the Admin Tools has the following functions: 
+- Allows for Project PDF documents to be uploaded to the Project Document Search Engine
+
+Planned functions that are to be added at a later date:  
+- Allows for pricing data CSV files to be uploaded and processed by the Indices Calcuation Service,
+- Displays our current usage of AWS and billing projections with warnings if we are going over budget (should always be checked before creating new cloud instances),
+- Displays the health and usage of our ALL services that are built and maintained by Allied Offsets (the Database and API being the most important)
+
+Other functions will also be added as and when they are required or requested.
