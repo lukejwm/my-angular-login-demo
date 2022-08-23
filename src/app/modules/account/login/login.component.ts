@@ -5,7 +5,11 @@ import { first } from 'rxjs/operators';
 
 import { AccountService, AlertService } from '@app/services';
 
-@Component({ templateUrl: 'login.component.html' })
+@Component({ 
+    selector: 'app-login', 
+    templateUrl: 'login.component.html', 
+    styleUrls: ['login.component.css'] 
+})
 export class LoginComponent implements OnInit {
     form: UntypedFormGroup;
     loading = false;
